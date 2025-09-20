@@ -7,7 +7,7 @@ export default function RedirectHandler() {
   useEffect(() => {
     const fetchAndRedirect = async () => {
       try {
-        const res = await fetch(`https://url-shortner-chi-ochre.vercel.app/${code}`);
+        const res = await fetch(`http://localhost:5000/${code}`);
         if (res.redirected) {
           window.location.href = res.url;
         } else {
