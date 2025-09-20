@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_BASE || 'https://url-shortner-chi-ochre.vercel.app/';
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5000';
 
 export async function createShortUrl(originalUrl) {
   const res = await fetch(`${API_BASE}/api/url/create`, {
